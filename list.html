@@ -6,6 +6,13 @@
             html,body,#main { 
             min-height: 100vh; 
             }
+            body{
+                background-color: #e0e0e0;
+                margin: 0%;
+            }
+            header,footer{
+                background-color: rosybrown;
+            }
             #mainLogo{
             height:60px;
             width:60px
@@ -17,6 +24,11 @@
             .socialMedia{
                 height: 20px;
                 width: 22px;
+            }
+            .imageWithData{
+                background-color: rgb(132,136,139);
+                margin:2%;
+                width:40%;
             }
         </style>
     </head>
@@ -31,20 +43,26 @@
                     <li><a href="#list-view">List View</a></li>
                     <li><a href="#image">Map View</a></li>
                 </ul>
+            <div class="imageWithData">
                 <a href="detail.html" target="_self" >
                   <img class="siteImages" id="list-view" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"/>
                   <h3>Radisson Blu Hotel</h3>
                   <p>5 Star</p>
                   <p>New Delhi</p>
                </a>
+            </div>
+            <div class="image">
                 <img class="siteImages" src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"/>
                 <h3>The Lalit New Delhi</h3>
                 <p>4.5 Star</p>
                 <p>New Delhi</p>
-                <img class="siteImages" src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"/>
+            </div>
+            <div class="image">    
+                <img class="siteImages" src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"/>
                 <h3>Taj Palace</h3>
                 <p>4.0 Star</p>
                 <p>New Delhi</p>
+            </div>    
                 <img id="image" src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png"/><br>
                 MAP VIEW
             </div>

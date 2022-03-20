@@ -7,18 +7,31 @@
         html,body,#main { 
             min-height: 100vh; 
             }
-            #mainLogo{
+        body{
+            background-color: #e0e0e0;
+            margin: 0%;
+            }
+        header,footer{
+                background-color: rosybrown;
+            }    
+        #mainLogo{
             height:60px;
             width:60px
             }
-            #siteImage{
+        #siteImage{
                 height:500px;
                 width:500px;
             }
-            .socialMedia{
+        .socialMedia{
                 height: 20px;
                 width: 22px;
             }
+        #contentDiv{
+            margin-top: 2%;
+            margin-left: 4%;
+            margin-right: 4%;
+            margin-bottom: 2%;
+        }    
     </style>
     <body>
         <div id="main">
@@ -26,7 +39,7 @@
                 <a href="index.html"><img src="assests/images/logo.png" alt="logo" id="mainLogo"/></a>
                 <a href="login.html" target="_blank">Login</a>
             </header>
-            <div name="content">
+            <div name="content" id="contentDiv">
                 <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" id="siteImage"/><br>
                 <form action="payment.html">
                     <label for="Adults">Adults:</label>
