@@ -2,28 +2,45 @@
 <html>
     <head>
         <title>Index</title>
+        <style>
+            html,body,#main { 
+            min-height: 100vh; 
+            }
+            #mainLogo{
+            height:60px;
+            width:60px
+            }
+            .siteImages{
+                height:150px;
+                width:150px;
+            }
+            .socialMedia{
+                height: 20px;
+                width: 22px;
+            }
+        </style>
     </head>
     <body>
         <div>
-            <div name="header">
-                <img src="assests/images/logo.png" height="200px" width="150px" alt="logo"/>
+            <header>
+                <img src="assests/images/logo.png" alt="logo" id="mainLogo"/>
                 <a href="login.html" target="_self">Login</a>
-            </div>
+            </header>
             <div name="content">
                 <input type="text" placeholder="City"/><br>
-                <a href="list.html" target="_self"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" height="300px" width="300px"/></a>
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" height="300px" width="300px"/>
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" height="300px" width="300px"/>
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" height="300px" width="300px"/><br>
+                <a href="list.html" target="_self"><img class="siteImages" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" /></a>
+                <img class="siteImages" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" />
+                <img class="siteImages" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" />
+                <img class="siteImages" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" /><br>
                 <a href="index.html">View more &gt&gt</a>
             </div>
-            <div name="footer">
+            <footer>
                 <a href="contact.html" target="_self">Contact Us</a><br>
-                <a href="https://www.facebook.com"><img src="assests/images/facebook.png" height="20px" width="22px"/></a>
-                <a href="https://www.instagram.com"><img src="assests/images/instagram.png" height="20px" width="22px"/></a>
-                <a href="https://twitter.com"><img src="assests/images/twitter.png" height="20px" width="22px"/><br></a>
+                <a href="https://www.facebook.com"><img class="socialMedia" src="assests/images/facebook.png" /></a>
+                <a href="https://www.instagram.com"><img class="socialMedia" src="assests/images/instagram.png" /></a>
+                <a href="https://twitter.com"><img class="socialMedia" src="assests/images/twitter.png" /><br></a>
                 &#169 2020 ROOM SEARCH PVT. LTD.
-            </div>
+            </footer>
         </div>
     </body>
 </html>

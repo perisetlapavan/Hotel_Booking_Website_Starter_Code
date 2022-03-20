@@ -3,14 +3,31 @@
     <head>
         <title>Detail</title>
     </head>
+    <style>
+        html,body,#main { 
+            min-height: 100vh; 
+            }
+            #mainLogo{
+            height:60px;
+            width:60px
+            }
+            #siteImage{
+                height:500px;
+                width:500px;
+            }
+            .socialMedia{
+                height: 20px;
+                width: 22px;
+            }
+    </style>
     <body>
-        <div>
-            <div name="header">
-                <a href="index.html"><img src="assests/images/logo.png" height="200px" width="150px" alt="logo"/></a>
+        <div id="main">
+            <header>
+                <a href="index.html"><img src="assests/images/logo.png" alt="logo" id="mainLogo"/></a>
                 <a href="login.html" target="_blank">Login</a>
-            </div>
+            </header>
             <div name="content">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"/><br>
+                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" id="siteImage"/><br>
                 <form action="payment.html">
                     <label for="Adults">Adults:</label>
                     <input type="number" value="1" min="1" id="Adults" name="Adults" required/><br>
@@ -38,13 +55,13 @@
                   <h5>DESCRIPTION</h5>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ad eveniet veritatis asperiores! Aperiam porro molestiae incidunt autem fugiat facere debitis consectetur sint labore inventore iste, tempora nesciunt rerum enim.</p>
             </div>
-            <div name="footer">
+            <footer>
                 <a href="contact.html" target="_self">Contact Us</a><br>
-                <a href="https://www.facebook.com"><img src="assests/images/facebook.png" height="20px" width="22px"/></a>
-                <a href="https://www.instagram.com"><img src="assests/images/instagram.png" height="20px" width="22px"/></a>
-                <a href="https://twitter.com"><img src="assests/images/twitter.png" height="20px" width="22px"/><br></a>
+                <a href="https://www.facebook.com"><img src="assests/images/facebook.png" class="socialMedia"/></a>
+                <a href="https://www.instagram.com"><img src="assests/images/instagram.png" class="socialMedia"/></a>
+                <a href="https://twitter.com"><img src="assests/images/twitter.png" class="socialMedia"/><br></a>
                 &#169 2020 ROOM SEARCH PVT. LTD.
-            </div>
+            </footer>
         </div>
     </body>
 </html>
