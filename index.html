@@ -2,20 +2,46 @@
 <html>
     <head>
         <title>Index</title>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <style>
+            
+
             html,body,#main { 
             min-height: 100vh; 
+
             }
             body{
                 background-color: #e0e0e0;
                 margin: 0%;
+                font-family:  'Ubuntu',sans-serif;
             }
             header,footer{
-                background-color: rosybrown;
+                background-color: rosybrown; 
+                           
             }
+            header{
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                position:fixed;
+                top:0px;
+                left:0px;      
+                width:100%;      
+            }
+            footer{
+                position: fixed;
+                bottom:0px;
+                left:0px;
+                width:100%;
+            }
+            #content{
+                margin-top: 60px;
+                margin-bottom: 60px;
+            }
+            
             #mainLogo{
             height:60px;
-            width:60px
+            width:60px;
             }
            
             .siteImages{
@@ -42,18 +68,59 @@
                 margin-right: 15%;
             }
             
-
+            input{
+                background-color: #f1f1f1;
+                border: 1px solid transparent;
+                border-radius: 12px;
+                padding:10px;
+                width: 30%;
+                font-size:16px;
+            }
+            a{
+                text-decoration: none;
+                color:black;
+            }
+            #subFooter1{
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            #contactUs{
+                padding: 10px;
+            }
+            #socialMediaIcons{
+                padding: 10px;
+            }
+            #copyRightText{
+                text-align: center;
+                font-size: 10px;
+            }
+            header a{
+                padding:10px;
+            }
+            #search{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #viewMore{
+                text-align: center;
+                padding:35px;
+            }
+            
+            
+                        
         </style>
     </head>
     <body>
-        <div>
+        <div id="mainBody">
             <header>
                 <img src="assests/images/logo.png" alt="logo" id="mainLogo"/>
-                <a href="login.html" target="_self">Login</a>
+                <a href="login.html" target="_self" id="login">Login</a>
             </header>
-            <div name="content">
+            <div name="content" id="content">
                 <div id="search">
-                   <input type="text" placeholder="City" /><br>
+                   <input type="text" placeholder="City"/><br>
                 </div>
                 <div id="siteImagesinDiv">
                   <a href="list.html" target="_self"><img class="siteImages"  id="firstImageSite" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" /></a>                 
@@ -64,15 +131,25 @@
                 
                   <img class="siteImages" id="lastImageSite" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" /><br>
                 </div> 
-                  <a href="index.html">View more &gt&gt</a>
+                <div id="viewMore">
+                  <a href="index.html" >View more &gt&gt</a>
+                </div>  
                  
             </div>
             <footer>
-                <a href="contact.html" target="_self">Contact Us</a><br>
-                <a href="https://www.facebook.com"><img class="socialMedia" src="assests/images/facebook.png" /></a>
-                <a href="https://www.instagram.com"><img class="socialMedia" src="assests/images/instagram.png" /></a>
-                <a href="https://twitter.com"><img class="socialMedia" src="assests/images/twitter.png" /><br></a>
+            <div id="subFooter1">
+                <div>
+                    <a href="contact.html" target="_self" id="contactUs">Contact Us</a><br>
+                </div>
+                <div id="socialMediaIcons">
+                    <a href="https://www.facebook.com"><img class="socialMedia" src="assests/images/facebook.png" /></a>
+                    <a href="https://www.instagram.com"><img class="socialMedia" src="assests/images/instagram.png" /></a>
+                    <a href="https://twitter.com"><img class="socialMedia" src="assests/images/twitter.png" /><br></a>
+                </div>
+            </div>
+            <div id="copyRightText">
                 &#169 2020 ROOM SEARCH PVT. LTD.
+            </div>    
             </footer>
         </div>
     </body>

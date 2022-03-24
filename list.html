@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>List</title>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <style>
             html,body,#main { 
             min-height: 100vh; 
@@ -9,9 +10,29 @@
             body{
                 background-color: #e0e0e0;
                 margin: 0%;
+                font-family:  'Ubuntu',sans-serif;
             }
             header,footer{
                 background-color: rosybrown;
+            }
+            header{
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                position: fixed;
+                top:0;
+                left:0;
+                width:100%;
+            }
+            footer{
+                position: fixed;
+                bottom:0;
+                left:0;
+                width:100%
+            }
+            a{
+                text-decoration: none;
+                color:black;
             }
             #mainLogo{
             height:60px;
@@ -29,6 +50,43 @@
                 background-color: rgb(132,136,139);
                 margin:2%;
                 width:40%;
+                
+            }
+            #subFooter1{
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            #contactUs{
+                padding: 10px;
+            }
+            #socialMediaIcons{
+                padding: 10px;
+            }
+            #copyRightText{
+                text-align: center;
+                font-size: 10px;
+            }
+            #viewbuttons{
+                display: flex;
+                justify-content: center;
+            }
+            #siteImages{
+                display:flex;
+            }
+            #pic2{
+                margin-left: 70px;
+            }
+            #pic1,#pic3{
+                margin-left: 60px;
+            }
+            #mapImage{
+                display: none;
+            }
+            #content{
+                margin-top: 60px;
+                margin-bottom: 60px;
+                padding-top: 20px;
             }
         </style>
     </head>
@@ -38,42 +96,63 @@
                 <a href="index.html"><img src="assests/images/logo.png" alt="logo" id="mainLogo"/></a>
                 <a href="login.html" target="_blank">Login</a>
             </header>
-            <div name="content">
-                <ul>
-                    <li><a href="#list-view">List View</a></li>
-                    <li><a href="#image">Map View</a></li>
-                </ul>
-            <div class="imageWithData">
-                <a href="detail.html" target="_self" >
+            <div name="content" id="content">
+                <div id="viewbuttons">
+                
+                    
+                    <a href="#list-view"><b>List View</b></a>
+                    
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <a href="#image"><b>Map View</b></a>
+                    
+                
+                </div>
+            <div id="siteImages">    
+                
+                 <div class="imageWithData" id="pic1">
+                     <a href="detail.html" target="_self" >
                   <img class="siteImages" id="list-view" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"/>
                   <h3>Radisson Blu Hotel</h3>
                   <p>5 Star</p>
                   <p>New Delhi</p>
-               </a>
-            </div>
-            <div class="image">
-                <img class="siteImages" src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"/>
-                <h3>The Lalit New Delhi</h3>
-                <p>4.5 Star</p>
-                <p>New Delhi</p>
-            </div>
-            <div class="image">    
-                <img class="siteImages" src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"/>
-                <h3>Taj Palace</h3>
-                <p>4.0 Star</p>
-                <p>New Delhi</p>
+                </a>
+                </div>
+                
+                <div class="imageWithData" id="pic2">
+                    <img class="siteImages" src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"/>
+                    <h3>The Lalit New Delhi</h3>
+                    <p>4.5 Star</p>
+                    <p>New Delhi</p>
+                </div>
             </div>    
+                
+                <div class="imageWithData" id="pic3">    
+                    <img class="siteImages" src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"/>
+                    <h3>Taj Palace</h3>
+                    <p>4.0 Star</p>
+                    <p>New Delhi</p>
+                </div>    
+                <div id="mapImage">
                 <img id="image" src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png"/><br>
                 MAP VIEW
+                </div>
             </div>
             <br>
             <footer>
-                <a href="contact.html" target="_self">Contact Us</a><br>
-                <a href="https://www.facebook.com"><img class="socialMedia" src="assests/images/facebook.png"/></a>
-                <a href="https://www.instagram.com"><img class="socialMedia" src="assests/images/instagram.png"/></a>
-                <a href="https://twitter.com"><img class="socialMedia" src="assests/images/twitter.png"/><br></a>
-                &#169 2020 ROOM SEARCH PVT. LTD.
-            </footer>
+                <div id="subFooter1">
+                    <div>
+                        <a href="contact.html" target="_self" id="contactUs">Contact Us</a><br>
+                    </div>
+                    <div id="socialMediaIcons">
+                        <a href="https://www.facebook.com"><img class="socialMedia" src="assests/images/facebook.png" /></a>
+                        <a href="https://www.instagram.com"><img class="socialMedia" src="assests/images/instagram.png" /></a>
+                        <a href="https://twitter.com"><img class="socialMedia" src="assests/images/twitter.png" /><br></a>
+                    </div>
+                </div>
+                <div id="copyRightText">
+                    &#169 2020 ROOM SEARCH PVT. LTD.
+                </div>    
+                </footer>
         </div>
     </body>
 </html>

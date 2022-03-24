@@ -2,37 +2,75 @@
 <html>
     <head>
         <title>Detail</title>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <style>
+            html,body,#main { 
+                min-height: 100vh; 
+                }
+            body{
+                background-color: #e0e0e0;
+                margin: 0%;
+                font-family:  'Ubuntu',sans-serif;
+                }
+            header,footer{
+                    background-color: rosybrown;
+                }   
+            header{
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                position: fixed;
+                top:0;
+                left: 0;
+                width:100%;
+            }  
+            footer{
+                position:fixed;
+                bottom:0;
+                left:0;
+                width:100%;
+            }
+            a{
+                text-decoration: none;
+                color:black;
+            }   
+            #mainLogo{
+                height:60px;
+                width:60px
+                }
+            #siteImage{
+                    height:500px;
+                    width:500px;
+                }
+            .socialMedia{
+                    height: 20px;
+                    width: 22px;
+                }
+            #contentDiv{
+                margin-top: 85px;
+                margin-left: 4%;
+                margin-right: 4%;
+                margin-bottom: 85px;
+                
+            } 
+            #subFooter1{
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            #contactUs{
+                padding: 10px;
+            }
+            #socialMediaIcons{
+                padding: 10px;
+            }
+            #copyRightText{
+                text-align: center;
+                font-size: 10px;
+            }   
+        </style>
     </head>
-    <style>
-        html,body,#main { 
-            min-height: 100vh; 
-            }
-        body{
-            background-color: #e0e0e0;
-            margin: 0%;
-            }
-        header,footer{
-                background-color: rosybrown;
-            }    
-        #mainLogo{
-            height:60px;
-            width:60px
-            }
-        #siteImage{
-                height:500px;
-                width:500px;
-            }
-        .socialMedia{
-                height: 20px;
-                width: 22px;
-            }
-        #contentDiv{
-            margin-top: 2%;
-            margin-left: 4%;
-            margin-right: 4%;
-            margin-bottom: 2%;
-        }    
-    </style>
+    
     <body>
         <div id="main">
             <header>
@@ -69,12 +107,20 @@
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ad eveniet veritatis asperiores! Aperiam porro molestiae incidunt autem fugiat facere debitis consectetur sint labore inventore iste, tempora nesciunt rerum enim.</p>
             </div>
             <footer>
-                <a href="contact.html" target="_self">Contact Us</a><br>
-                <a href="https://www.facebook.com"><img src="assests/images/facebook.png" class="socialMedia"/></a>
-                <a href="https://www.instagram.com"><img src="assests/images/instagram.png" class="socialMedia"/></a>
-                <a href="https://twitter.com"><img src="assests/images/twitter.png" class="socialMedia"/><br></a>
-                &#169 2020 ROOM SEARCH PVT. LTD.
-            </footer>
+                <div id="subFooter1">
+                    <div>
+                        <a href="contact.html" target="_self" id="contactUs">Contact Us</a><br>
+                    </div>
+                    <div id="socialMediaIcons">
+                        <a href="https://www.facebook.com"><img class="socialMedia" src="assests/images/facebook.png" /></a>
+                        <a href="https://www.instagram.com"><img class="socialMedia" src="assests/images/instagram.png" /></a>
+                        <a href="https://twitter.com"><img class="socialMedia" src="assests/images/twitter.png" /><br></a>
+                    </div>
+                </div>
+                <div id="copyRightText">
+                    &#169 2020 ROOM SEARCH PVT. LTD.
+                </div>    
+                </footer>
         </div>
     </body>
 </html>
