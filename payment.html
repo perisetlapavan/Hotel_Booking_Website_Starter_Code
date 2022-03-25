@@ -7,14 +7,26 @@
             html,body,#main { 
             min-height: 100vh; 
             }
+
             body{
             background-color: #e0e0e0;
             margin: 0%;
             font-family:  'Ubuntu',sans-serif;
             }
+
+            a{
+                text-decoration: none;
+                color:black;
+            }
+            img{
+                max-height:200px;
+                max-width:250px;
+            }
+
             header,footer{
             background-color: rosybrown;
             }
+
             header{
                 display:flex;
                 justify-content: space-between;
@@ -22,30 +34,28 @@
                 position: fixed;
                 top:0;
                 left:0; 
-                width:100%;              
+                width:100%; 
+                padding-left: 1%;             
             }
-            footer{
-                position: fixed;
-                bottom: 0;
-                left:0;
-                width:100%;
-            }
-            a{
-                text-decoration: none;
-                color:black;
-            }
+            
             #mainLogo{
-            height:60px;
-            width:60px
+                height:60px;
+                width:60px;
+                
             }
-            #siteImage{
-                height:500px;
-                width:500px;
+
+            #login{
+                padding-right:2%;
+                margin-right: 2%;
+            } 
+
+            #content{
+                margin-top: 85px;
+                margin-bottom: 65px;
+                display:flex;
+                flex-direction: column;;
             }
-            .socialMedia{
-                height: 20px;
-                width: 22px;
-            }
+
             #imageWithData{
                 background-color: rgb(132,136,139);               
                 width:50%;
@@ -53,83 +63,137 @@
                 margin: auto;
                 margin-top:2%;
                 margin-bottom: 2%;
+                display:flex;
             }
+
+            
+
+            #siteImage{
+                height:500px;
+                width:500px;
+            }
+
+            #billAndData{
+                display:flex;
+                border-style: solid;               
+                border-radius: 5px;
+                border-width: 1px;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 7%;
+                padding-right: 7%;
+                margin-left: 1%;
+                margin-right:1%;
+                background-color: rosybrown;
+                
+            }
+
             #dataAboutCustomer{
                 margin:2%;
             }
+
             #dataAboutAmount{
                 padding:1% 2%;
-                border-style: solid;
                 
-                border-radius: 5px;
                 margin:2%;
             }
+
+            #paymentLink{
+                padding-bottom: 35px;
+            }
+
+            footer{
+                position: fixed;
+                bottom: 0;
+                left:0;
+                width:100%;
+            }
+            
             #subFooter1{
                 display:flex;
                 justify-content: space-between;
+                justify-content: baseline;
                 align-items: center;
             }
+            
+            .socialMedia{
+                height: 20px;
+                width: 22px;
+            }
+            
+            #contactUsDiv{
+                margin-left: 2%;
+                margin-top: 1.3%;
+                margin-bottom: 1.3%;
+            }
+            
+            
             #contactUs{
                 padding: 10px;
             }
-            #socialMediaIcons{
-                padding: 10px;
-            }
+
             #copyRightText{
                 text-align: center;
                 font-size: 10px;
             }
-            #paymentLink{
-                padding-bottom: 35px;
+
+            #socialMediaIcons{
+                padding: 10px;
             }
-            #content{
-                margin-top: 85px;
-                margin-bottom: 65px;
-            }
+            
+            
+            
+            
         </style>
     </head>
     <body>
         <div id="main">
             <header>
                 <a href="index.html"><img src="assests/images/logo.png" id="mainLogo" alt="logo"/></a>
-                <a href="login.html" target="_blank">Login</a>
+                <a href="login.html" target="_blank" id="login">Login</a>
             </header>
             <div name="content" id="content">
             <div id="imageWithData">
+               <div>
                 <img id="siteImage" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"/>
-                <h2>Radisson Blu Hotel</h2>
-                <p>#38 of 1,289 hotels in New Delhi</p>
-                <p>National Highway 8, New Delhi 110017 India</p>
+               </div> 
+               <div id="hoteladdress"> 
+                <h2>&nbsp Radisson Blu Hotel</h2>
+                <p>&nbsp #38 of 1,289 hotels in New Delhi</p>
+                <p>&nbsp National Highway 8, New Delhi 110017 India</p>
+               </div>   
             </div>
+           <div id="billAndData">
             <div id="dataAboutCustomer">
-                <p><b>Name:</b> John Doe</p>
-                <p><b>Number of Adults:</b> 2</p>
-                <p><b>Check-in Data:</b> 06/06/2020</p>
-                <p><b>Check-out Date:</b> 08/06/2020</p>
+                <p><b><i>Name:</i></b> John Doe</p>
+                <p><b><i>Number of Adults:</i></b> 2</p>
+                <p><b><i>Check-in Data:</i></b> 06/06/2020</p>
+                <p><b><i>Check-out Date:</i></b> 08/06/2020</p>
             </div> 
             <div id="dataAboutAmount">    
-                <p><b>Tariff Breakdown:</b> Rs 1000 x 2 Adults x 5 Nights</p>
-                <p><b>Total Amount:</b> Rs 10000</p>
+                <p><b><i>Tariff Breakdown:</i></b> Rs 1000 x 2 Adults x 5 Nights</p>
+                <p><b><i>Total Amount:</i></b> Rs 10000</p>
             </div>    
             <div id="paymentLink">
                 <a href="payment.html">Pay Now</a>
-            </div>   
+            </div> 
+           </div>    
             </div>
             <footer>
                 <div id="subFooter1">
-                    <div>
+                    <div id="contactUsDiv">
                         <a href="contact.html" target="_self" id="contactUs">Contact Us</a><br>
                     </div>
+                    <div id="copyRightText">
+                        &#169 2020 ROOM SEARCH PVT. LTD.
+                   </div> 
                     <div id="socialMediaIcons">
                         <a href="https://www.facebook.com"><img class="socialMedia" src="assests/images/facebook.png" /></a>
                         <a href="https://www.instagram.com"><img class="socialMedia" src="assests/images/instagram.png" /></a>
                         <a href="https://twitter.com"><img class="socialMedia" src="assests/images/twitter.png" /><br></a>
-                    </div>
-                </div>
-                <div id="copyRightText">
-                    &#169 2020 ROOM SEARCH PVT. LTD.
-                </div>    
-                </footer>
+                    </div>                           
+                </div>   
+            </footer>
         </div>
     </body>
 </html>

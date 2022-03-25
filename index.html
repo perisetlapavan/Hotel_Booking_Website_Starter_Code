@@ -10,15 +10,23 @@
             min-height: 100vh; 
 
             }
+
             body{
                 background-color: #e0e0e0;
                 margin: 0%;
                 font-family:  'Ubuntu',sans-serif;
             }
+
+            a{
+                text-decoration: none;
+                color:black;
+            }
+
             header,footer{
                 background-color: rosybrown; 
                            
             }
+
             header{
                 display:flex;
                 justify-content: space-between;
@@ -28,46 +36,38 @@
                 left:0px;      
                 width:100%;      
             }
-            footer{
-                position: fixed;
-                bottom:0px;
-                left:0px;
-                width:100%;
+
+            header a{
+                padding:10px;
             }
+
+            #mainLogo{
+            height:60px;
+            width:60px;
+            margin-left: 1%;
+            }
+
+            #login{
+                margin-right: 2%;
+            }
+            
             #content{
                 margin-top: 60px;
                 margin-bottom: 60px;
             }
-            
-            #mainLogo{
-            height:60px;
-            width:60px;
-            }
-           
-            .siteImages{
-                height:150px;
-                width:150px;
-                border-radius: 20px;
-                margin: 4%;
-                
-            }
-            .socialMedia{
-                height: 20px;
-                width: 22px;
-            }
+
             #search{
                 background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-                height:380px;
+                height:380px;              
+                display:flex;
+                justify-content: center;
+                align-items: center;
                 
             }
-            #siteImagesinDiv{
-                margin-left: 15%;
-                margin-right: 15%;
-            }
-            
+
             input{
                 background-color: #f1f1f1;
                 border: 1px solid transparent;
@@ -76,40 +76,130 @@
                 width: 30%;
                 font-size:16px;
             }
-            a{
-                text-decoration: none;
-                color:black;
+            input:focus{
+                outline: none;
             }
+
+            #siteImagesinDiv{
+                margin-left: 15%;
+                margin-right: 15%;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .siteImages:hover {
+                opacity: 0.8;
+                
+            }
+
+            .siteImageDiv{
+                margin-right: 100px;
+                margin-top: 50px;
+                
+            }
+
+            .siteImages{
+                height:150px;
+                width:150px;
+                border-radius: 40px;
+                margin: 4%;
+                box-shadow:10px 10px 10px gray ;
+                
+            }
+
+            #delhicentered{
+                visibility: hidden;
+            }
+
+            
+
+            #firstImageSiteDiv:hover div {
+                visibility: visible;
+                position: relative;
+                bottom: 90px;
+                left:60px;
+                color: white;
+               }
+
+            #goacentered{
+                visibility: hidden;
+            }   
+
+            #secondImageSiteDiv:hover div {
+                visibility: visible;
+                position: relative;
+                bottom: 90px;
+                left:70px;
+                color: white;
+               }
+            
+            #charminarcentered{
+                visibility: hidden;
+            }   
+
+            #thirdImageSiteDiv:hover div {
+                visibility: visible;
+                position: relative;
+                bottom: 90px;
+                left:45px;
+                color: white;
+               }  
+               
+            #calcuttacentered{
+                visibility: hidden;
+            }   
+
+            #fourthImageSiteDiv:hover div {
+                visibility: visible;
+                position: relative;
+                bottom: 90px;
+                left:50px;
+                color: white;
+               }   
+
+            #viewMore{
+                text-align: center;
+                padding:35px;
+                
+            }
+
+            footer{
+                position: fixed;
+                bottom:0px;
+                left:0px;
+                width:100%;
+            }
+
             #subFooter1{
                 display:flex;
                 justify-content: space-between;
+                justify-content: baseline;
                 align-items: center;
             }
+                                
+            .socialMedia{
+                height: 20px;
+                width: 22px;
+            }          
+            
             #contactUs{
                 padding: 10px;
             }
-            #socialMediaIcons{
-                padding: 10px;
+
+            #contactUsDiv{
+                margin-left: 2%;
+                margin-top: 1.3%;
+                margin-bottom: 1.3%;
             }
+
             #copyRightText{
                 text-align: center;
                 font-size: 10px;
             }
-            header a{
-                padding:10px;
-            }
-            #search{
-                display:flex;
-                justify-content: center;
-                align-items: center;
-            }
-            #viewMore{
-                text-align: center;
-                padding:35px;
-            }
-            
-            
-                        
+
+            #socialMediaIcons{
+                padding: 10px;
+            }           
         </style>
     </head>
     <body>
@@ -123,13 +213,13 @@
                    <input type="text" placeholder="City"/><br>
                 </div>
                 <div id="siteImagesinDiv">
-                  <a href="list.html" target="_self"><img class="siteImages"  id="firstImageSite" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" /></a>                 
+                  <div class="siteImageDiv" id="firstImageSiteDiv"><a href="list.html" target="_self"><img class="siteImages"  src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" /></a><div id="delhicentered">Delhi</div></div>                 
                 
-                  <img class="siteImages" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" />               
+                  <div class="siteImageDiv" id="secondImageSiteDiv"><img class="siteImages" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" /><div id="goacentered">Goa</div></div>               
                 
-                  <img class="siteImages" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" />               
+                  <div class="siteImageDiv" id="thirdImageSiteDiv"><img class="siteImages" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" /><div id="charminarcentered">Charminar</div></div>               
                 
-                  <img class="siteImages" id="lastImageSite" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" /><br>
+                  <div class="siteImageDiv" id="fourthImageSiteDiv"><img class="siteImages" id="lastImageSite" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" /><div id="calcuttacentered">Calcutta</div></div><br>
                 </div> 
                 <div id="viewMore">
                   <a href="index.html" >View more &gt&gt</a>
@@ -138,18 +228,18 @@
             </div>
             <footer>
             <div id="subFooter1">
-                <div>
+                <div id="contactUsDiv">
                     <a href="contact.html" target="_self" id="contactUs">Contact Us</a><br>
                 </div>
+                <div id="copyRightText">
+                    &#169 2020 ROOM SEARCH PVT. LTD.
+               </div> 
                 <div id="socialMediaIcons">
                     <a href="https://www.facebook.com"><img class="socialMedia" src="assests/images/facebook.png" /></a>
                     <a href="https://www.instagram.com"><img class="socialMedia" src="assests/images/instagram.png" /></a>
                     <a href="https://twitter.com"><img class="socialMedia" src="assests/images/twitter.png" /><br></a>
-                </div>
-            </div>
-            <div id="copyRightText">
-                &#169 2020 ROOM SEARCH PVT. LTD.
-            </div>    
+                </div>                           
+            </div>   
             </footer>
         </div>
     </body>

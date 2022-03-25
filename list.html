@@ -12,9 +12,16 @@
                 margin: 0%;
                 font-family:  'Ubuntu',sans-serif;
             }
+
+            a{
+                text-decoration: none;
+                color:black;
+            }
+
             header,footer{
                 background-color: rosybrown;
             }
+
             header{
                 display:flex;
                 justify-content: space-between;
@@ -24,77 +31,115 @@
                 left:0;
                 width:100%;
             }
+
+            header a{
+                padding-left:10px;
+            }
+
+            #mainLogo{
+                height:60px;
+                width:60px
+            }
+
+            #login{
+                margin-right: 2%;
+                padding-right: 1%;
+            }
+
+            #content{
+                margin-top: 60px;
+                margin-bottom: 60px;
+                padding-top: 20px;
+            }
+
+            #viewbuttons{
+                display: flex;
+                justify-content: center;
+            }
+
+            #siteImages{
+                display:flex;
+                flex-wrap: wrap;
+            }
+
+            .siteImages{
+                height:200px;
+                width:250px;
+            }
+
+            .hotelInfo{
+                padding-left: 2%;
+            } 
+
+            #pic2{
+                margin-left: 70px;
+            }
+
+            #pic1,#pic3{
+                margin-left: 60px;
+            }
+
+            #pic1,#pic2,#pic3{
+                display:flex;
+            }
+
+            .imageWithData{
+                background-color: lightgray;
+                margin:2%;
+                width:40%;
+                
+            }
+
+            #mapImage{
+                display: none;
+            }
+
             footer{
                 position: fixed;
                 bottom:0;
                 left:0;
                 width:100%
             }
-            a{
-                text-decoration: none;
-                color:black;
-            }
-            #mainLogo{
-            height:60px;
-            width:60px
-            }
-            .siteImages{
-                height:200px;
-                width:250px;
-            }
+                      
+            
             .socialMedia{
                 height: 20px;
                 width: 22px;
             }
-            .imageWithData{
-                background-color: rgb(132,136,139);
-                margin:2%;
-                width:40%;
-                
-            }
+            
             #subFooter1{
                 display:flex;
                 justify-content: space-between;
+                justify-content: baseline;
                 align-items: center;
             }
+
+            #contactUsDiv{
+                margin-left: 2%;
+                margin-top: 1.3%;
+                margin-bottom: 1.3%;
+            }
+
             #contactUs{
                 padding: 10px;
             }
-            #socialMediaIcons{
-                padding: 10px;
-            }
+
             #copyRightText{
                 text-align: center;
                 font-size: 10px;
             }
-            #viewbuttons{
-                display: flex;
-                justify-content: center;
+
+            #socialMediaIcons{
+                padding: 10px;
             }
-            #siteImages{
-                display:flex;
-            }
-            #pic2{
-                margin-left: 70px;
-            }
-            #pic1,#pic3{
-                margin-left: 60px;
-            }
-            #mapImage{
-                display: none;
-            }
-            #content{
-                margin-top: 60px;
-                margin-bottom: 60px;
-                padding-top: 20px;
-            }
+           
         </style>
     </head>
     <body>
         <div id="main">
             <header>
                 <a href="index.html"><img src="assests/images/logo.png" alt="logo" id="mainLogo"/></a>
-                <a href="login.html" target="_blank">Login</a>
+                <a href="login.html" target="_blank" id="login">Login</a>
             </header>
             <div name="content" id="content">
                 <div id="viewbuttons">
@@ -110,28 +155,44 @@
             <div id="siteImages">    
                 
                  <div class="imageWithData" id="pic1">
-                     <a href="detail.html" target="_self" >
-                  <img class="siteImages" id="list-view" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"/>
-                  <h3>Radisson Blu Hotel</h3>
-                  <p>5 Star</p>
-                  <p>New Delhi</p>
-                </a>
+                    
+                     <div> 
+                        <a href="detail.html" target="_self" > 
+                          <img class="siteImages" id="list-view" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"/>
+                        </a>  
+                     </div> 
+                     <div class="hotelInfo" > 
+                        <a href="detail.html" target="_self" > 
+                          <h3>Radisson Blu Hotel</h3>
+                          <p>5 Star</p>
+                          <p>New Delhi</p>
+                        </a>  
+                     </div> 
+                 
                 </div>
                 
                 <div class="imageWithData" id="pic2">
-                    <img class="siteImages" src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"/>
-                    <h3>The Lalit New Delhi</h3>
-                    <p>4.5 Star</p>
-                    <p>New Delhi</p>
+                    <div>
+                       <img class="siteImages" src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"/>
+                    </div>
+                    <div class="hotelInfo" >
+                       <h3>The Lalit New Delhi</h3>
+                       <p>4.5 Star</p>
+                       <p>New Delhi</p>
+                    </div>
                 </div>
-            </div>    
-                
-                <div class="imageWithData" id="pic3">    
-                    <img class="siteImages" src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"/>
-                    <h3>Taj Palace</h3>
-                    <p>4.0 Star</p>
-                    <p>New Delhi</p>
+                             
+                <div class="imageWithData" id="pic3">  
+                    <div> 
+                        <img class="siteImages" src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"/>
+                    </div>
+                    <div class="hotelInfo" > 
+                        <h3>Taj Palace</h3>
+                        <p>4.0 Star</p>
+                        <p>New Delhi</p>
+                    </div>
                 </div>    
+            </div>     
                 <div id="mapImage">
                 <img id="image" src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png"/><br>
                 MAP VIEW
@@ -140,19 +201,19 @@
             <br>
             <footer>
                 <div id="subFooter1">
-                    <div>
+                    <div id="contactUsDiv">
                         <a href="contact.html" target="_self" id="contactUs">Contact Us</a><br>
                     </div>
+                    <div id="copyRightText">
+                        &#169 2020 ROOM SEARCH PVT. LTD.
+                   </div> 
                     <div id="socialMediaIcons">
                         <a href="https://www.facebook.com"><img class="socialMedia" src="assests/images/facebook.png" /></a>
                         <a href="https://www.instagram.com"><img class="socialMedia" src="assests/images/instagram.png" /></a>
                         <a href="https://twitter.com"><img class="socialMedia" src="assests/images/twitter.png" /><br></a>
-                    </div>
-                </div>
-                <div id="copyRightText">
-                    &#169 2020 ROOM SEARCH PVT. LTD.
-                </div>    
-                </footer>
+                    </div>                           
+                </div>   
+            </footer>
         </div>
     </body>
 </html>
