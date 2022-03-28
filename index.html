@@ -2,70 +2,62 @@
 <html>
     <head>
         <title>Index</title>
+        <!-- Fonts link -->
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Fonts -->
+
+        <!-- /Bootstrap link-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <!-- Bootstrap/ -->
+        
+        <!-- /Javascript link -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-        <!-- <script> 
-            $(function(){
-              $("#includedContent").load("login.html"); 
-            });
-            </script>  -->
-            <link rel="import" href="login.html">
+        <!-- Javascript/ -->
         <style>
             
 
             html,body,#main { 
             min-height: 100vh; 
-
             }
-
             body{
                 background-color: #e0e0e0;
                 margin: 0%;
                 font-family:  'Ubuntu',sans-serif;
             }
-            
-            a{
-                color:black
-            }
-            a:hover{
-                text-decoration: none;
-                
-            }
 
-            button{
-                margin-right:2%;
+            a{
+                text-decoration: none;
+                color:black;
             }
 
             header,footer{
-                background-color: rosybrown; 
-                           
+                background-color: rosybrown;
             }
 
             header{
                 display:flex;
                 justify-content: space-between;
                 align-items: center;
-                position:fixed;
-                top:0px;
-                left:0px;      
-                width:100%;      
+                position: fixed;
+                top:0;
+                left:0;
+                width:100%;
             }
 
-            header a{
-                padding:10px;
+             header img{
+                margin-left:10px;
             }
 
             #mainLogo{
-            height:60px;
-            width:60px;
-            margin-left: 1%;
+                height:60px;
+                width:60px
             }
 
             #login{
                 margin-right: 2%;
-                text-decoration: none;
+                padding-right: 1%;
             }
             
             #content{
@@ -185,8 +177,7 @@
                 position: fixed;
                 bottom:0;
                 left:0;
-                width:100%;
-                
+                width:100%
             }
                       
             
@@ -217,7 +208,7 @@
 
             #socialMediaIcons{
                 padding: 10px;
-            }         
+            }        
         </style>
     </head>
     <body>
@@ -245,7 +236,7 @@
                   <div class="siteImageDiv" id="fourthImageSiteDiv"><img class="siteImages" id="lastImageSite" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" /><div id="calcuttacentered">Calcutta</div></div><br>
                 </div> 
                 <div id="viewMore">
-                  <a href="index.html" >View more &gt&gt</a>
+                    <a href="index.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">View more</a>
                 </div>  
                  
             </div>
