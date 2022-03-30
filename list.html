@@ -2,6 +2,15 @@
 <html>
     <head>
         <title>List</title>
+        <!-- /meta tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- meta tag/ -->
+
+        <!-- /CSS link -->
+        <link rel="stylesheet" href="styles/list.css">
+        <link rel="stylesheet" href="styles/loader.css">
+        <!-- CSS link/ -->
+
         <!-- Fonts link -->
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,24 +29,6 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
         <!-- Javascript/ -->
         <style>
-            html,body,#main { 
-            min-height: 100vh; 
-            }
-            body{
-                background-color: #e0e0e0;
-                margin: 0%;
-                font-family:  'Ubuntu',sans-serif;
-            }
-
-            a{
-                text-decoration: none;
-                color:black;
-            }
-
-            header,footer{
-                background-color: rosybrown;
-            }
-
             header{
                 display:flex;
                 justify-content: space-between;
@@ -46,125 +37,17 @@
                 top:0;
                 left:0;
                 width:100%;
+                z-index: 5;
             }
-
-            header a{
-                padding-left:10px;
-            }
-
-            #mainLogo{
-                height:60px;
-                width:60px
-            }
-
-            #login{
-                margin-right: 2%;
-                padding-right: 1%;
-            }
-
-            #content{
-                margin-top: 60px;
-                margin-bottom: 60px;
-                padding-top: 20px;
-            }
-
-            #viewbuttons{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
-
-            #navPills{
-               margin:auto;
-            }
-
-            #siteImages{
-                display:flex;
-                flex-wrap: wrap;
-                margin-left: 4%;
-            }
-
-            .siteImages{
-                height:200px;
-                width:250px;
-            }
-
-            .hotelInfo{
-                padding-left: 2%;
-            } 
-
-            #pic2{
-                margin-left: 70px;
-            }
-
-            #pic1,#pic3{
-                margin-left: 60px;
-            }
-
-            #pic1,#pic2,#pic3{
-                display:flex;
-            }
-
-            .imageWithData{
-                background-color: lightgray;
-                margin:2%;
-                width:40%;
-                
-            }
-            .imageWithData:hover{
-                background-color: rosybrown;
-            }
-
-            .imageWithData:hover a{
+            a{
+                text-decoration: none;
                 color:black;
-                 text-decoration: none;    
             }
-
-            #image{
-                text-align: center;
-            }
-
-            footer{
-                position: fixed;
-                bottom:0;
-                left:0;
-                width:100%
-            }
-                      
-            
-            .socialMedia{
-                height: 20px;
-                width: 22px;
-            }
-            
-            #subFooter1{
-                display:flex;
-                justify-content: space-between;
-                justify-content: baseline;
-                align-items: center;
-            }
-
-            #contactUsDiv{
-                margin-left: 2%;
-                margin-top: 1.3%;
-                margin-bottom: 1.3%;
-            }
-
-            
-
-            #copyRightText{
-                text-align: center;
-                font-size: 10px;
-            }
-
-            #socialMediaIcons{
-                padding: 10px;
-            }
-           
         </style>
     </head>
-    <body>
-        <div id="main">
+    <body onload="myFunction()">
+        <div id="loader"></div>
+        <div style="display:none;" id="myDiv" class="animate-bottom">
             <!--/ Header -->
             <header>
                 <a href="index.html"><img src="assests/images/logo.png" alt="logo" id="mainLogo"/></a>
@@ -188,11 +71,11 @@
                       </ul>
                     </div>
                       <div class="tab-content" id="pills-tabContent">
-                       . <div class="tab-pane fade show active" id="list-view" role="tabpanel" aria-labelledby="pills-home-tab">
-                            <div id="siteImages">    
-                                
-                                <div class="imageWithData" id="pic1">
-                                    <div> 
+                         <div class="tab-pane fade show active" id="list-view" role="tabpanel" aria-labelledby="pills-home-tab">
+                           
+                            <div id="siteImages" class="row">
+                                <div class="imageWithData" id="pic1" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                                    <div class="siteImagesDiv"> 
                                        <a href="detail.html" target="_self" > 
                                          <img class="siteImages" id="list-view" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"/>
                                        </a>  
@@ -221,7 +104,7 @@
                                     </div>
                                </div>
                                
-                               <div class="imageWithData" id="pic2">
+                               <div class="imageWithData" id="pic2" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                                    <div>
                                       <img class="siteImages" src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"/>
                                    </div>
@@ -247,7 +130,7 @@
                                    </div>
                                </div>
                                             
-                               <div class="imageWithData" id="pic3">  
+                               <div class="imageWithData" id="pic3" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">  
                                    <div> 
                                        <img class="siteImages" src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"/>
                                    </div>
@@ -304,9 +187,8 @@
                 </div>   
                 </footer>
                 <!-- Footer/ -->
-        </div>
 
-         <!-- Modal Sign-in -->
+                <!-- /Modal Sign-in -->
     <div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="example-modal-label" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -334,8 +216,9 @@
           </div>
         </div>
       </div>
+      <!-- Modal Sign-in/ -->
 
-      <!-- Modal Contact Us !-->
+      <!-- /Modal Contact Us !-->
     <div class="modal fade" id="ContactUs" tabindex="-1" role="dialog" aria-labelledby="example-modal-label" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -361,5 +244,23 @@
           </div>
         </div>
       </div>
+    </div>
+      <!-- Modal Contact Us !/-->
+
+    <!--/ for loading -->
+    <script>
+        var myVar;
+        
+        function myFunction() {
+          myVar = setTimeout(showPage, 3000);
+        }
+        
+        function showPage() {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
+    <!-- for loading /-->
+         
     </body>
 </html>
