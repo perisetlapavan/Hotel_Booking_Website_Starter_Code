@@ -1,185 +1,195 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Payment</title>
-        <!-- /meta tag -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- meta tag/ -->
 
-        <!-- /CSS link -->
-        <link rel="stylesheet" href="styles/payment.css">
-        <link rel="stylesheet" href="styles/loader.css">
-        <!-- CSS link/ -->
+<head>
+  <title>Payment</title>
+  <!-- /meta tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- meta tag/ -->
 
-        <!-- Fonts link -->
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- Fonts -->
+  <!-- /CSS link -->
+  <link rel="stylesheet" href="styles/payment.css">
+  <link rel="stylesheet" href="styles/loader.css">
+  <!-- CSS link/ -->
 
-        <!-- /Bootstrap link-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-        <!-- Bootstrap/ -->
-        
-        <!-- /Javascript link -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-        <!-- Javascript/ -->
-        <style>
-             header{
-                display:flex;
-                justify-content: space-between;
-                align-items: center;
-                position: fixed;
-                top:0;
-                left:0;
-                width:100%;
-            }
-            a{
-                text-decoration: none;
-                color:black;
-            }
-            a:hover{
-                text-decoration: none;
-                color:black;
-            }
-        </style>
-    </head>
-    <body onload="myFunction()">
-        <div id="loader"></div>
-        <div style="display:none;" id="myDiv" class="animate-bottom">
-            <!--/ Header -->
-            <header>
-                <a href="index.html"><img src="assests/images/logo.png" alt="logo" id="mainLogo"/></a>
-                <form class="form-inline" id="login">
-                  <button class="btn  my-2 my-sm-0 btn-light"  type="button" data-toggle="modal" data-target="#Login">LOGIN</button>
-                </form>
-            </header>
-            <!-- Header /-->
+  <!-- Fonts link -->
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Fonts -->
 
-            <!-- /Content -->
-            <div name="content" id="content">
-            <div id="imageWithData">
-               <div id="siteImageDiv">
-                <img id="siteImage" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"/>
-               </div> 
-               <div id="hoteladdress"> 
-                <h2>&nbsp Radisson Blu Hotel</h2>
-                <p>&nbsp #38 of 1,289 hotels in New Delhi</p>
-                <p>&nbsp National Highway 8, New Delhi 110017 India</p>
-               </div>   
-            </div>
-            <div style="width:100%; height:100px" id="midDiv"></div> 
-           <div id="billAndData" class="row">
-            <div  id="dataAboutCustomer" class="insideBillAndData col-12 col-sm-4">
-                <p><b><i>Name:</i></b> John Doe</p>
-                <p><b><i>Number of Adults:</i></b> 2</p>
-                <p><b><i>Check-in Data:</i></b> 06/06/2020</p>
-                <p><b><i>Check-out Date:</i></b> 08/06/2020</p>
-            </div> 
-            <div id="dataAboutAmount" class="insideBillAndData col-12 col-sm-4">    
-                <p><b><i>Tariff Breakdown:</i></b> Rs 1000 x 2 Adults x 5 Nights</p>
-                <p><b><i>Total Amount:</i></b> Rs 10000</p>
-            </div>
-            <div id="paymentLink" class="insideBillAndData col-12 col-sm-4" >
-                <button type="button" class="btn btn-success"><a href="payment.html" >Pay Now</a></button>
-            </div> 
-           </div>   
-           <div style="width:100%; height:100px"></div> 
-            </div>
-            <!-- Content/ -->
+  <!-- /Bootstrap link-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <!-- Bootstrap/ -->
 
-            <!--/ Footer -->
-            <footer>
-                <div id="subFooter1">
-                    <div id="contactUsDiv">
-                        .<button type="button" class="btn btn-primary" id="contactUs" data-toggle="modal" data-target="#ContactUs" >
-                            Contact&nbspUs
-                        </button>
-                    </div>
-                    <div id="copyRightText">
-                        &#169 2020 ROOM SEARCH PVT. LTD.
-                   </div> 
-                    <div id="socialMediaIcons">
-                        <a href="https://www.facebook.com"><img class="socialMedia" src="assests/images/facebook.png" /></a>
-                        <a href="https://www.instagram.com"><img class="socialMedia" src="assests/images/instagram.png" /></a>
-                        <a href="https://twitter.com"><img class="socialMedia" src="assests/images/twitter.png" /><br></a>
-                    </div>                           
-                </div>   
-                </footer>
-                <!-- Footer/ -->
+  <!-- /Javascript link -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- Javascript/ -->
+  <style>
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
 
-                <!-- /Modal Sign-in -->
-    <div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="example-modal-label" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="example-modal-label">Please Login</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                  <form>
-                      <div class="form-group" >
-                        <label for="example-input-email">Username:</label>
-                        <input type="text" class="form-control" id="example-input-email" aria-describedby="emailHelp" placeholder="Enter Username">
-                      </div>
-                      <div class="form-group" >
-                        <label for="example-input-password">Password:</label>
-                        <input type="password" class="form-control" id="example-input-password" placeholder="Enter Password">
-                      </div>
-                  </form>
-            </div>
-            <div class="modal-footer" >
-                <button type="submit" class="btn btn-primary">Login</button>
-            </div>
-          </div>
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: black;
+    }
+  </style>
+</head>
+
+<body onload="myFunction()">
+  <div id="loader"></div>
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+    <!--/ Header -->
+    <header>
+      <a href="index.html"><img src="assests/images/logo.png" alt="logo" id="mainLogo" /></a>
+      <form class="form-inline" id="login">
+        <button class="btn  my-2 my-sm-0 btn-light" type="button" data-toggle="modal"
+          data-target="#Login">LOGIN</button>
+      </form>
+    </header>
+    <!-- Header /-->
+
+    <!-- /Content -->
+    <div name="content" id="content">
+      <div id="imageWithData">
+        <div id="siteImageDiv">
+          <img id="siteImage" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" />
+        </div>
+        <div id="hoteladdress">
+          <h2>&nbsp Radisson Blu Hotel</h2>
+          <p>&nbsp #38 of 1,289 hotels in New Delhi</p>
+          <p>&nbsp National Highway 8, New Delhi 110017 India</p>
         </div>
       </div>
-      <!-- Modal Sign-in /-->
+      <div style="width:100%; height:100px" id="midDiv"></div>
+      <div id="billAndData" class="row">
+        <div id="dataAboutCustomer" class="insideBillAndData col-12 col-sm-4">
+          <p><b><i>Name:</i></b> John Doe</p>
+          <p><b><i>Number of Adults:</i></b> 2</p>
+          <p><b><i>Check-in Data:</i></b> 06/06/2020</p>
+          <p><b><i>Check-out Date:</i></b> 08/06/2020</p>
+        </div>
+        <div id="dataAboutAmount" class="insideBillAndData col-12 col-sm-4">
+          <p><b><i>Tariff Breakdown:</i></b> Rs 1000 x 2 Adults x 5 Nights</p>
+          <p><b><i>Total Amount:</i></b> Rs 10000</p>
+        </div>
+        <div id="paymentLink" class="insideBillAndData col-12 col-sm-4">
+          <button type="button" class="btn btn-success"><a href="payment.html">Pay Now</a></button>
+        </div>
+      </div>
+      <div style="width:100%; height:100px"></div>
+    </div>
+    <!-- Content/ -->
 
-      <!-- /Modal Contact Us !-->
-    <div class="modal fade" id="ContactUs" tabindex="-1" role="dialog" aria-labelledby="example-modal-label" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title" id="example-modal-label">Get in touch</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                  <form>
-                      <div class="form-group" >
-                        <p>Thank you for reaching out!!!</p>
-                        <p>Please enter your email and we will get back to you.</p>
-                        <label for="example-input-email">Email:</label>
-                        <input type="text" class="form-control" id="example-input-email" aria-describedby="emailHelp" placeholder="Enter your email id">
-                      </div>
-                  </form>
-            </div>
-            <div class="modal-footer" >
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
+    <!--/ Footer -->
+    <footer>
+      <div id="subFooter1">
+        <div id="contactUsDiv">
+          .<button type="button" class="btn btn-primary" id="contactUs" data-toggle="modal" data-target="#ContactUs">
+            Contact&nbspUs
+          </button>
+        </div>
+        <div id="copyRightText">
+          &#169 2020 ROOM SEARCH PVT. LTD.
+        </div>
+        <div id="socialMediaIcons">
+          <a href="https://www.facebook.com"><img class="socialMedia" src="assests/images/facebook.png" /></a>
+          <a href="https://www.instagram.com"><img class="socialMedia" src="assests/images/instagram.png" /></a>
+          <a href="https://twitter.com"><img class="socialMedia" src="assests/images/twitter.png" /><br></a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer/ -->
+
+    <!-- /Modal Sign-in -->
+    <div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="example-modal-label"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="example-modal-label">Please Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="example-input-email">Username:</label>
+                <input type="text" class="form-control" id="example-input-email" aria-describedby="emailHelp"
+                  placeholder="Enter Username">
+              </div>
+              <div class="form-group">
+                <label for="example-input-password">Password:</label>
+                <input type="password" class="form-control" id="example-input-password" placeholder="Enter Password">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Login</button>
           </div>
         </div>
       </div>
     </div>
-    <!-- Modal Contact Us !/-->
+    <!-- Modal Sign-in /-->
 
-    <!-- /for loading -->
-        <script>
-            var myVar;
-            
-            function myFunction() {
-              myVar = setTimeout(showPage, 3000);
-            }
-            
-            function showPage() {
-              document.getElementById("loader").style.display = "none";
-              document.getElementById("myDiv").style.display = "block";
-            }
-        </script>
-        <!--for loading/  -->
-    </body>
+    <!-- /Modal Contact Us !-->
+    <div class="modal fade" id="ContactUs" tabindex="-1" role="dialog" aria-labelledby="example-modal-label"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="example-modal-label">Get in touch</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <p>Thank you for reaching out!!!</p>
+                <p>Please enter your email and we will get back to you.</p>
+                <label for="example-input-email">Email:</label>
+                <input type="text" class="form-control" id="example-input-email" aria-describedby="emailHelp"
+                  placeholder="Enter your email id">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Contact Us !/-->
+
+  <!-- /for loading -->
+  <script>
+    var myVar;
+
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+  </script>
+  <!--for loading/  -->
+</body>
+
 </html>
