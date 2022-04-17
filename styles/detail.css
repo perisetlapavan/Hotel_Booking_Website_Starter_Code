@@ -1,6 +1,12 @@
 html,body,#main { 
     min-height: 100vh; 
     }
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+        }
+        
 body{
     background-color: #e0e0e0;
     margin: 0%;
@@ -119,7 +125,9 @@ input{
     width: 100%;
 }
 
-
+#block-3{
+    text-align: left;
+}
 
 footer{
     position: fixed;

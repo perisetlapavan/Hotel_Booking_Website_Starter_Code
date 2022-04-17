@@ -1,6 +1,12 @@
 html,body,#main { 
     min-height: 100vh; 
     }
+    
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+        }
+
     body{
         background-color: #e0e0e0;
         margin: 0%;
@@ -72,6 +78,7 @@ html,body,#main {
     .hotelInfo{
         padding-left: 2%;
         min-width: 200px;
+        text-align: left;
     } 
 
     #pic1,#pic2,#pic3{

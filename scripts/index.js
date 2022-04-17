@@ -22,3 +22,23 @@ let divimages=`<div class="siteImageDiv col-12 col-xs-12 col-sm-12 col-md-6 col-
         </div><br></br>`
 document.getElementById("row").innerHTML=divimages;        
 //-------------------------------------------------------------------------------------------------------------
+
+// scriptCode for View more and View less------------------------------------------------------------------------
+function popUp() {
+    if (document.getElementById('row').style.display === "none") {
+      document.getElementById('row').style.display = "flex";
+      document.getElementById("viewButton").innerHTML = "View less";
+      document.getElementById('createSpace').style.display = "block";
+    }
+    else{
+      document.getElementById('row').style.display = "none";
+      document.getElementById("viewButton").innerHTML = "View More";
+      document.getElementById('createSpace').style.display = "none";
+    }
+  }
+//----------------------------------------------------------------------------------------------------------------   
+
+//Modal-----------------------------------------------------------------------------------------------------------------
+
+//---------------------------------------------------------------------------------------------------------------
+
