@@ -50,30 +50,6 @@
     <!--/ Content -->
     <div name="content" id="contentDiv" class="row">
       <div id="block1" class="col-12 col-sm-8">
-        .<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100"
-                src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"
-                alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"
-                alt="Third slide">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
       </div>
       <div id="block2" class="col-12 col-sm-4">
         <form action="payment.html">
@@ -82,19 +58,19 @@
               <div class="label">
                 <label>Adults:</label>
               </div>
-              <input type="number" value="1" min="1" id="number" onkeyup="sum()" required>
+              <input type="number" placeholder="1" min="1" id="number" onkeyup="sum()" onblur="storeNoOfAdults()" required>
             </div>
             <div class="forms">
               <div class="label">
                 <label>Name:</label>
               </div>
-              <input type="text" required>
+              <input type="text" id="Name" onblur="storeName()" required>
             </div>
             <div class="forms">
               <div class="label">
                 <label>From Date:</label>
               </div>
-              <input type="date" id="fromDate" required>
+              <input type="date" id="fromDate" onblur="storeFromDate()" required>
             </div>
             <div class="forms">
               <div class="label">
@@ -110,7 +86,7 @@
               <input id="total" value="1000" disabled>
             </div>
             <div class="forms" style="margin:auto">
-              <button type="submit" class="btn btn-primary btn btn-outline-success">Book Now</button>
+              <a href="payment.html"><button type="submit" class="btn btn-primary btn btn-outline-success" onclick="formButton()">Book Now</button></a>
             </div>
           </div>
         </form>

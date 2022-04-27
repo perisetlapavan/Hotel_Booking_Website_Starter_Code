@@ -53,7 +53,7 @@
   <div style="display:none;" id="myDiv" class="animate-bottom">
 
     <!-- /Header (innerHTML in common.js file)-->
-    <header id="headerId"></header> 
+    <header id="headerId"></header>
     <!-- Header/ -->
 
     <!--/ Content -->
@@ -75,90 +75,7 @@
           <div class="tab-pane fade show active" id="list-view" role="tabpanel" aria-labelledby="pills-home-tab">
 
             <div id="siteImages" class="row">
-              <div class="imageWithData" id="pic1" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
-                <div class="siteImagesDiv">
-                  <a href="detail.html" target="_self">
-                    <img class="siteImages" id="list-view"
-                      src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" />
-                  </a>
-                </div>
-                <div class="hotelInfo">
-                  <a href="detail.html" target="_self">
-                    <h3>Radisson Blu Hotel</h3>
-                    <p><span class="material-icons-outlined material-icons" style="color: gold;">
-                        star
-                      </span>
-                      <span class="material-icons-outlined material-icons" style="color: gold;">
-                        star
-                      </span>
-                      <span class="material-icons-outlined material-icons" style="color: gold;">
-                        star
-                      </span>
-                      <span class="material-icons-outlined material-icons" style="color: gold;">
-                        star
-                      </span>
-                      <span class="material-icons-outlined material-icons" style="color: gold;">
-                        star
-                      </span>
-                    </p>
-                    <p>New Delhi</p>
-                  </a>
-                </div>
-              </div>
-
-              <div class="imageWithData" id="pic2" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
-                <div>
-                  <img class="siteImages"
-                    src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" />
-                </div>
-                <div class="hotelInfo">
-                  <h3>The Lalit New Delhi</h3>
-                  <p><span class="material-icons-outlined material-icons" style="color: gold;">
-                      star
-                    </span>
-                    <span class="material-icons-outlined material-icons" style="color: gold;">
-                      star
-                    </span>
-                    <span class="material-icons-outlined material-icons" style="color: gold;">
-                      star
-                    </span>
-                    <span class="material-icons-outlined material-icons" style="color: gold;">
-                      star_half
-                    </span>
-                    <span class="material-icons-outlined material-icons">
-                      star
-                    </span>
-                  </p>
-                  <p>New Delhi</p>
-                </div>
-              </div>
-
-              <div class="imageWithData" id="pic3" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
-                <div>
-                  <img class="siteImages"
-                    src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" />
-                </div>
-                <div class="hotelInfo">
-                  <h3>Taj Palace</h3>
-                  <p><span class="material-icons-outlined material-icons" style="color: gold;">
-                      star
-                    </span>
-                    <span class="material-icons-outlined material-icons" style="color: gold;">
-                      star
-                    </span>
-                    <span class="material-icons-outlined material-icons" style="color: gold;">
-                      star
-                    </span>
-                    <span class="material-icons-outlined material-icons" style="color: gold;">
-                      star
-                    </span>
-                    <span class="material-icons-outlined material-icons">
-                      star
-                    </span>
-                  </p>
-                  <p>New Delhi</p>
-                </div>
-              </div>
+              
             </div>...
           </div>
           <div class="tab-pane fade" id="image" role="tabpanel" aria-labelledby="pills-profile-tab">
@@ -179,26 +96,28 @@
 
 
   </div>
-  
+
 
   <!--/ for loading -->
   <script>
-    var myVar;
-
-    function myFunction() {
-      myVar = setTimeout(showPage, 3000);
-    }
+    
 
     function showPage() {
       document.getElementById("loader").style.display = "none";
       document.getElementById("myDiv").style.display = "block";
     }
+
+
   </script>
   <!-- for loading /-->
 
   <!--/javaScript link to common.js  -->
   <script src="scripts/common.js"></script>
   <!--/javaScript link to common.js  -->
+
+  <!--/javaScript link to list.js  -->
+  <script src="scripts/list.js"></script>
+  <!--/javaScript link to list.js  -->
 
 </body>
 
