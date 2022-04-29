@@ -73,6 +73,9 @@ html,body,#main {
     .siteImages{
         height:200px;
         width:250px;
+        display: inline;
+        /* flex-direction: row; */
+        /* flex-direction: row; */
     }
 
     .hotelInfo{
@@ -83,12 +86,18 @@ html,body,#main {
         text-align: left;
     } 
 
-    #pic1,#pic2,#pic3{
+    /* #pic1,#pic2,#pic3,#pic4,#pic5,#pic6,#pic7,#pic8,#pic9,#pic10,#pic11,#pic12,#pic13,#pic14{
         margin-left: 60px;
     }
 
-    #pic1,#pic2,#pic3{
+    #pic1,#pic2,#pic3,#pic4,#pic5,#pic6,#pic7,#pic8,#pic9,#pic10,#pic11,#pic12,#pic13,#pic14{
         display:flex;
+    } */
+
+    .pic{
+        margin-left: 60px;
+        display:flex;
+        /* flex-direction: row; */
     }
 
     .imageWithData{
@@ -112,6 +121,9 @@ html,body,#main {
          text-decoration: none;    
     }
 
+    .id{
+        display: none;
+    }
     #image{
         text-align: center;
     }

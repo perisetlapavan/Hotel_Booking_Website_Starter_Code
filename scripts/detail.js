@@ -39,7 +39,7 @@ function myFunction() {
     //populating html page---------------------------------------------------------------
     return new Promise((resolve, reject) => {
         var xhr = new XMLHttpRequest();
-        var url = "https://travel-advisor.p.rapidapi.com/photos/list?location_id=304216&currency=USD&limit=50&lang=en_US";
+        var url = "https://travel-advisor.p.rapidapi.com/photos/list?location_id="+sessionStorage.getItem("hotel_Id")+"&currency=USD&limit=50&lang=en_US";
         xhr.open("GET", url);
         xhr.setRequestHeader("X-RapidAPI-Host", "travel-advisor.p.rapidapi.com");
         xhr.setRequestHeader("X-RapidAPI-Key", "6d56d52dd7msh93a4e9d9359610fp149bbdjsn904d321f9246");
@@ -133,3 +133,7 @@ if (typeof exports !== "undefined") {
     };
 }
   //----------------------------------------------------------------------------------------------------------
+
+  //to get data from list.html--------------------------------------------------------------------------------
+  document.getElementById("hotelName").innerHTML=sessionStorage.getItem("hotelName");
+  // ---------------------------------------------------------------------------------------------------------

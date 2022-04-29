@@ -12,4 +12,10 @@ document.getElementById("dataAboutCustomer").innerHTML= "<p><b><i>Name:</i></b>"
                                                         "<p><b><i>Check-out Data::</i></b>"+sessionStorage.getItem('to Date')+"</p>";
 document.getElementById("dataAboutAmount").innerHTML= "<p><b><i>Tariff Breakdown:</i></b>Rs 1000 x "+sessionStorage.getItem('No of Adults')+"Adults x "+ sessionStorage.getItem('dayDuration')+ "Nights</p>"+
                                                        "<p><b><i>Total Amount::</i></b>"+sessionStorage.getItem('totalAmount')+"</p>"
-//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------                                                       
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------     
+
+// getting data from session storage to use in this page--------------------------------------------------------------------
+document.getElementById("siteImage").setAttribute("src",sessionStorage.getItem('hotelImage'));
+document.getElementById("hotelName").innerHTML=sessionStorage.getItem('hotelName');
+document.getElementById("hotelAddress").innerHTML=sessionStorage.getItem('hotellocation');
+// --------------------------------------------------------------------------------------------------------------------

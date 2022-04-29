@@ -75,8 +75,8 @@
           <div class="tab-pane fade show active" id="list-view" role="tabpanel" aria-labelledby="pills-home-tab">
 
             <div id="siteImages" class="row">
-              
-            </div>...
+
+            </div>Loading...
           </div>
           <div class="tab-pane fade" id="image" role="tabpanel" aria-labelledby="pills-profile-tab">
             <div id="mapImage">
@@ -100,7 +100,7 @@
 
   <!--/ for loading -->
   <script>
-    
+
 
     function showPage() {
       document.getElementById("loader").style.display = "none";
@@ -111,13 +111,27 @@
   </script>
   <!-- for loading /-->
 
+  <!-- /for google maps -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDt2U3OWRmwvNh13hSiwG1Lk288-4TlYww&callback=initMap"></script>
+  <script>
+    var map;
+    function initMap() {
+    map = new google.maps.Map(document.getElementById("mapImage"), {
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 8
+    });
+    }
+    </script>
+   
+  <!-- for google maps/ -->
+
   <!--/javaScript link to common.js  -->
   <script src="scripts/common.js"></script>
-  <!--/javaScript link to common.js  -->
+  <!--javaScript link to common.js/  -->
 
   <!--/javaScript link to list.js  -->
   <script src="scripts/list.js"></script>
-  <!--/javaScript link to list.js  -->
+  <!--javaScript link to list.js/  -->
 
 </body>
 
